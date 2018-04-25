@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HelloSan</title>
+</head>
+<body>
+  <script src="https://unpkg.com/san@latest"></script>
+  <script>
+    var MyHello = san.defineComponent({
+      template:`
+          <p>Hello World!</p>
+      `
+    });
+    var myHello = new MyHello();
+    myHello.attach(document.body);
+  </script>
+</body>
+</html>
