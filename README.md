@@ -1,2 +1,2 @@
-# MyBaiduIfeCode
-我的百度前端技术学院代码仓库
+# MyBaiduIFECode2018
+我的2018年百度前端技术学院代码仓库
