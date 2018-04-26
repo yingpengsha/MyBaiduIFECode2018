@@ -1,0 +1,30 @@
+.main{
+  width: 400px;
+  margin: 0px auto;
+}
+.title{
+  margin: 0px auto;
+  text-align: center;
+}
+.name{
+  width: 100%;
+  height: 30px;
+}
+.nameone{
+  font-weight: bold;
+  float: left;
+}
+.nametwo{
+  float: left;
+}
+.github{
+  width: 100%;
+  height: 30px
+}
+.githubone{
+  font-weight: bold;
+  float: left;
+}
+.githubtwo{
+  float: left;
+}
