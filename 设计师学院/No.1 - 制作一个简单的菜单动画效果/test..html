@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style> 
+    body{
+      background-color: #eaeaeb;
+    }
+    .line{
+      width:0px;
+      height:2px;
+      background:#4868e1;
+      margin:5px auto;
+      transition:width 0.5s;
+      -moz-transition:width 0.5s; /* Firefox 4 */
+      -webkit-transition:width 0.5s; /* Safari and Chrome */
+      -o-transition:width 0.5s; /* Opera */
+    }
+    .title{
+      margin:0px auto;
+      text-align: center;
+      transition:color 0.5s;
+      -moz-transition:color 0.5s; /* Firefox 4 */
+      -webkit-transition:color 0.5s; /* Safari and Chrome */
+      -o-transition:color 0.5s; /* Opera */
+    }
+    .button{
+      margin: 5px auto;
+      background-color: #eaeaeb;
+      border: 1px solid #c3c4c4;
+      border-radius: 5px;
+      outline:none;
+    }
+  </style>
+  <script type="text/javascript">
+    function but(){
+      var line=document.getElementById("line");
+      var title=document.getElementById("title");
+      var lineWidth=window.getComputedStyle(line).width;
+      if(lineWidth==="0px"){
+        line.style.width="80px";
+        title.style.color="#4868e1"
+      }
+      else{
+        line.style.width="0px";
+        title.style.color="black";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="title" class="title">
+    前端学院
+  </div>
+  <div id="line" class="line"></div>
+  <div style="width:70px;margin:0px auto">
+    <button id="button" class="button" onclick="but()">切换样式</button>
+  </div>
+</body>
+</html>
