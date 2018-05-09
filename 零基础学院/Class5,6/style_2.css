@@ -1,0 +1,49 @@
+body{
+  margin: 0px;
+}
+.main{
+  width: 800px;
+  height: 844px;
+  margin: 0px auto;
+}
+.title1{
+  width: 200px;
+  height: 100%;
+  float: left;
+  margin: 0px 20px 0px 0px;
+  text-align: center;
+  line-height: 100px;
+  background: #65a5fa;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.resume{
+  overflow: auto;
+  padding: 20px 0px 0px 0px;
+}
+.title2{
+  height: 33px;
+
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.detail{
+  overflow: auto;
+  margin-bottom: 25px;
+}
+.content{
+  float: left;
+  margin:0px 40px 0px 0px;
+}
+.content2{
+  margin-bottom: 30px;
+}
+.bold{
+  font-weight: bold;
+  margin:0px 10px 0px 0px;
+}
+.float{
+  float: left;
+}
