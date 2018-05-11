@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>absolute+margin-left方法</title>
+	<style type="text/css">
+		* {
+		  	box-sizing: border-box;
+		  	font-size: 50px;
+		  	text-align: center;
+		}
+		html,body{
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#left{
+			width: 300px;
+			height: 100%;
+			background: #909399;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		#middle{
+			width: 400px;
+			height: 100%;
+			background: #C0C4CC;
+
+			position: absolute;
+			left: 300px;
+			top: 0;
+		}
+		#right{
+			width: calc(100% - 700px);
+			height: 100%;
+			background: #DCDFE6;
+			
+			margin-left: 700px;
+		}
+	</style>
+</head>
+<body>
+	<div id="left">300px</div>
+	<div id="middle">400px</div>
+	<div id="right">100%-700px</div>
+</body>
+</html>

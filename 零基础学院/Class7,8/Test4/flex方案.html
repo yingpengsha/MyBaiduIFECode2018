@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex方案</title>
+	<style type="text/css">
+		* {
+		  	box-sizing: border-box;
+		  	font-size: 50px;
+		  	text-align: center;
+		}
+		html,body{
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+		}
+		#left{
+			background: #909399;
+
+			flex: 0 300px;
+		}
+		#middle{
+			background: #DCDFE6;
+
+			flex: 1;
+		}
+		#right{
+			background: #C0C4CC;
+			
+			flex: 0 300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="left">300px</div>
+	<div id="middle">flex:1</div>
+	<div id="right">300px</div>
+</body>
+</html>
