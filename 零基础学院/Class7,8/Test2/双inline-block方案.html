@@ -14,14 +14,14 @@
 			height: 100%;
 		}
 		#left{
-			width: 30%;
+			width: 300px;
 			height: 100%;
 			background: #C0C4CC;
 
 			display: inline-block;
 		}
 		#right{
-			width: 70%;
+			width: calc(100% - 300px);
 			height: 100%;
 			background: #DCDFE6;
 
@@ -30,7 +30,7 @@
 	</style>
 </head>
 <body>
-	<div id="left">30%</div><div id="right">70%</div>
+	<div id="left">300px</div><div id="right">100%-300px</div>
 	<!-- 值得注意的是inline-block会在两个div中间产生空格 -->
 	<!-- 解决方案：http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/ -->
 </body>
