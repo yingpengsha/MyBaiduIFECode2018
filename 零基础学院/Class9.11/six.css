@@ -1,0 +1,203 @@
+#crew{
+	width: 1600px;
+	height: 1080px;
+
+	margin: 0 auto;
+
+	background-color: white;
+	border-bottom: 1px solid #e7e7e7;
+	color: black;
+
+	position: relative;
+}
+#crew .title{
+	font-size: 42px;
+	line-height: 52px;
+
+	margin-top: 95px;
+	text-align: center;
+}
+#crew .content{
+	font-size: 18px;
+	line-height: 28px;
+
+	margin-top: 30px;
+	text-align: center;
+}
+#crew .img1{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-image: url("img/1.png");
+
+	position: absolute;
+	top: 205px;
+	left: 315px;
+}
+#crew .bk1{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+
+	transition: all 0.75s;
+
+	position: absolute;
+	top: 205px;
+	left: 315px;
+}
+#crew .bk1:hover{
+	opacity: 1;
+}
+#crew .caption1{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+
+	margin-top: 100px;
+}
+#crew .caption2{
+	font-size: 12px;
+	text-align: center;
+	color: rgba(255,255,255,0.5);
+
+	margin-top: 10px;
+}
+#crew .icon1{
+	width: 50px;
+	height: 50px;
+
+	border:1px solid rgba(255,255,255,0.2);
+	border-radius: 50% 50% 50% 50%;
+
+	transition: all 0.75s;
+
+	position: absolute;;
+	top: 190px;
+	left: 130px;
+}
+#crew .icon1:hover{
+	cursor: pointer; 
+	background-color: rgba(255,255,255,0.5);
+}
+#crew .icon2{
+	width: 50px;
+	height: 50px;
+
+	border:1px solid rgba(255,255,255,0.2);
+	border-radius: 50% 50% 50% 50%;
+
+	transition: all 0.75s;
+
+	position: absolute;;
+	top: 190px;
+	left: 210px;
+}
+#crew .icon2:hover{
+	cursor: pointer; 
+	background-color: rgba(255,255,255,0.5);
+}
+#crew .icon3{
+	width: 50px;
+	height: 50px;
+
+	border:1px solid rgba(255,255,255,0.2);
+	border-radius: 50% 50% 50% 50%;
+
+	transition: all 0.75s;
+
+	position: absolute;;
+	top: 190px;
+	left: 290px;
+}
+#crew .icon3:hover{
+	cursor: pointer; 
+	background-color: rgba(255,255,255,0.5);
+}
+#crew .img2{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-image: url("img/2.png");
+
+	position: absolute;
+	top: 205px;
+	left: 815px;
+}
+#crew .bk2{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+
+	transition: all 0.75s;
+
+	position: absolute;
+	top: 205px;
+	left: 815px;
+}
+#crew .bk2:hover{
+	opacity: 1;
+}
+#crew .img3{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-image: url("img/3.png");
+
+	position: absolute;
+	top: 575px;
+	left: 315px;
+}
+#crew .bk3{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+
+	transition: all 0.75s;
+
+	position: absolute;
+	top: 575px;
+	left: 315px;
+}
+#crew .bk3:hover{
+	opacity: 1;
+}
+#crew .img4{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-image: url("img/4.png");
+
+	position: absolute;
+	top: 575px;
+	left: 815px;
+}
+#crew .bk4{
+	width: 470px;
+	height: 340px;
+
+	border-radius: 3px 3px 3px 3px;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+
+	transition: all 0.75s;
+
+	position: absolute;
+	top: 575px;
+	left: 815px;
+}
+#crew .bk4:hover{
+	opacity: 1;
+}

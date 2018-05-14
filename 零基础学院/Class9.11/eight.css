@@ -1,0 +1,61 @@
+#footer{
+	width: 1600px;
+	height: 410px;
+
+	margin: 0 auto;
+
+	background-color: black;
+	color: white;
+
+	position: relative;
+}
+#footer .about1{
+	font-size: 14px;
+	position: absolute;
+	top: 82px;
+	left: 215px;
+}
+#footer .about2{
+	font-size: 14px;
+	position: absolute;
+	top: 82px;
+	left: 510px;
+}
+#footer .about3{
+	font-size: 14px;
+	position: absolute;
+	top: 82px;
+	left: 815px;
+}
+#footer .about4{
+	font-size: 14px;
+	position: absolute;
+	top: 82px;
+	left: 1110px;
+}
+#footer .content{
+	margin-top: 25px;
+	color: rgba(255,255,255,0.5);
+}
+#footer img{
+	margin-right: 15px;
+	transition: all 0.5s;
+	opacity: 0.5;
+}
+#footer img:hover{
+	cursor: pointer; 
+	opacity: 1;
+}
+#footer a{
+	transition: all 0.25s;
+	text-decoration: none;
+}
+#footer a:link{
+	color: rgba(255,255,255,0.5);
+}
+#footer a:hover{
+	color: rgba(255,255,255,0.9);
+}
+#footer a:visited{
+	color: rgba(255,255,255,0.5);
+}

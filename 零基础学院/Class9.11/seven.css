@@ -1,0 +1,170 @@
+#contacts{
+	width: 1600px;
+	height: 700px;
+
+	margin: 0 auto;
+
+	background-color: white;
+	color: black;
+
+	position: relative;
+}
+#contacts .form{
+	width: 470px;
+	height: 560px;
+
+	padding: 50px;
+
+	border: 1px solid #e7e7e7;
+	border-radius: 8px 8px 8px 8px;
+
+	position: absolute;
+	top: 70px;
+	left: 315px;
+}
+#contacts .title1{
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+
+	text-align: center;
+}
+#contacts .email{
+	width: 370px;
+	height: 50px;
+
+	font-size: 14px;
+	font-family:  Montserrat;
+
+	margin: 40px auto 15px auto;
+	padding: 0px 20px;
+	border: 1px solid #e7e7e7;
+	border-radius: 3px 3px 3px 3px;
+	background-color: transparent;
+	outline: none;
+
+	transition: all 0.7s;
+}
+#contacts .email:focus{
+	border: 1px solid black;
+}
+#contacts .subject{
+	width: 370px;
+	height: 50px;
+
+	font-size: 14px;
+	font-family:  Montserrat;
+
+	margin: 15px auto;
+	padding: 0px 20px;
+	border: 1px solid #e7e7e7;
+	border-radius: 3px 3px 3px 3px;
+	background-color: transparent;
+	outline: none;
+
+	transition: all 0.7s;
+}
+#contacts .subject:focus{
+	border: 1px solid black;
+}
+#contacts .message{
+	width: 370px;
+	line-height: 28px;
+
+	font-size: 14px;
+	font-family:  Montserrat;
+
+	margin: 15px auto;
+	overflow:hidden;
+	padding: 15px 20px;
+	border: 1px solid #e7e7e7;
+	border-radius: 3px 3px 3px 3px;
+	background-color: transparent;
+	outline: none;
+	resize: none;
+
+	transition: all 0.7s;
+}
+#contacts .message:focus{
+	border: 1px solid black;
+}
+#contacts .send{
+	width: 370px;
+	height: 50px;
+
+	font-size: 14px;
+	font-family:  Montserrat;
+	color: white;
+
+	border: 1px solid black;
+	border-radius: 3px 3px 3px 3px;
+	background-color: #000000;
+	outline: none;
+
+	transition: all 0.5s;
+}
+#contacts .send:hover{
+	cursor: pointer; 
+	background-color: #434343;
+}
+#contacts .title2{
+	font-size: 42px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 155px;
+	left: 915px;
+}
+#contacts .content{
+	font-size: 16px;
+	line-height: 26px;
+
+	position: absolute;
+	top: 225px;
+	left: 915px;
+}
+#contacts .info1{
+	position: absolute;
+	top: 362px;
+	left: 915px;
+}
+#contacts .icon1{
+	width: 19px;
+	height: 25px;
+
+	background-image: url("img/MapIcon.png");
+}
+#contacts .info2{
+	position: absolute;
+	top: 440px;
+	left: 915px;
+}
+#contacts .icon2{
+	width: 24px;
+	height: 24px;
+
+	background-image: url("img/PhoneIcon.png");
+}
+#contacts .info3{
+	position: absolute;
+	top: 495px;
+	left: 915px;
+}
+#contacts .icon3{
+	width: 24px;
+	height: 19px;
+
+	background-image: url("img/MailIcon.png");
+}
+#contacts .infomation{
+	width: 250px;
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
+
+	position: absolute;
+	top: -5px;
+	left: 40px;
+}

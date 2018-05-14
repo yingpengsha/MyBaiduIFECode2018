@@ -1,0 +1,124 @@
+#boatload{
+	width: 1600px;
+	height: 710px;
+
+	margin: 0px auto;
+
+	background: white;
+	color: black;
+
+	position: relative;
+}
+#boatload .title1{
+	font-size: 14px;
+	font-weight: bold;
+
+	margin-top: 85px;
+
+	text-align: center;
+}
+#boatload .title2{
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 52px;
+
+	margin-top: 30px;
+
+	text-align: center;
+}
+#boatload .img1{
+	width: 50px;
+	height: 49px;
+	background-image: url("img/phone.png");
+
+	position: absolute;
+	top: 315px;
+	left: 275px;
+}
+#boatload .img2{
+	width: 50px;
+	height: 49px;
+	background-image: url("img/option.png");
+
+	position: absolute;
+	top: 315px;
+	left: 878px;
+}
+#boatload .img3{
+	width: 50px;
+	height: 48px;
+	background-image: url("img/pen.png");
+
+	position: absolute;
+	top: 482px;
+	left: 275px;
+}
+#boatload .img4{
+	width: 50px;
+	height: 48px;
+	background-image: url("img/regulator.png");
+
+	position: absolute;
+	top: 482px;
+	left: 878px;
+}
+#boatload .caption1{
+	font-size: 20px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 315px;
+	left: 350px;
+}
+#boatload .caption2{
+	font-size: 20px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 315px;
+	left: 950px;
+}
+#boatload .caption3{
+	font-size: 20px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 482px;
+	left: 350px;
+}
+#boatload .caption4{
+	font-size: 20px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 482px;
+	left: 950px;
+}
+#boatload .content1{
+	font-size: 16px;
+
+	position: absolute;
+	top: 355px;
+	left: 350px;
+}
+#boatload .content2{
+	font-size: 16px;
+
+	position: absolute;
+	top: 355px;
+	left: 950px;
+}
+#boatload .content3{
+	font-size: 16px;
+
+	position: absolute;
+	top: 525px;
+	left: 350px;
+}
+#boatload .content4{
+	font-size: 16px;
+
+	position: absolute;
+	top: 525px;
+	left: 950px;
+}

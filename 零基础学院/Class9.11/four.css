@@ -1,0 +1,72 @@
+#products{
+	width: 1600px;
+	height: 580px;
+
+	margin: 0 auto;
+
+	background-color: white;
+	border-bottom: 1px solid #e7e7e7;
+	color: black;
+
+	position: relative;
+}
+#products .title{
+	font-size: 42px;
+	line-height: 52px;
+
+	text-align: center;
+	margin-top: 95px;
+}
+#products .content1{
+	width: 255px;
+	height: 300px;
+
+	position: absolute;
+	top: 225px;
+	left: 330px;
+}
+#products .content2{
+	width: 265px;
+	height: 300px;
+
+	position: absolute;
+	top: 220px;
+	left: 665px;
+}
+#products .content3{
+	width: 265px;
+	height: 300px;
+
+	position: absolute;
+	top: 220px;
+	left: 1010px;
+}
+#products .singleton{
+	width: 120px;
+	height: 35px;
+
+	margin: 0 auto;
+	background-image: url("img/Singleton.png");
+}
+#products .hero{
+	width: 75px;
+	height: 34px;
+
+	margin: 0 auto;
+	background-image: url("img/Hero.png");
+}
+#products .portland{
+	width: 117px;
+	height: 30px;
+
+	margin: 0 auto;
+	background-image: url("img/Portland.png");
+}
+#products .text{
+	margin: 0 auto;
+	text-align: center;
+
+	position: absolute;
+	top: 70px;
+	left: 0px;
+}

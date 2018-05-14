@@ -1,0 +1,66 @@
+#leaf{
+	width: 1600px;
+	height: 1000px;
+
+	margin: 0 auto;
+
+	background-color: white;
+	border-bottom: 1px solid #e7e7e7;
+	color: black;
+
+	position: relative;
+}
+#leaf .img1{
+	width: 570px;
+	height: 350px;
+
+	background-image: url("img/leaf.png");
+
+	position: absolute;
+	top: 115px;
+	left: 315px
+}
+#leaf .title1{
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 190px;
+	left: 985px
+}
+#leaf .content1{
+	font-size: 16px;
+	line-height: 28px;
+
+	position: absolute;
+	top: 270px;
+	left: 985px
+}
+#leaf .img2{
+	width: 570px;
+	height: 350px;
+
+	background-image: url("img/bird.png");
+
+	position: absolute;
+	top: 545px;
+	left: 715px
+}
+#leaf .title2{
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 610px;
+	left: 315px
+}
+#leaf .content2{
+	font-size: 16px;
+	line-height: 28px;
+
+	position: absolute;
+	top: 695px;
+	left: 315px
+}

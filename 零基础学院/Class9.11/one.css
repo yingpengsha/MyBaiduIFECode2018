@@ -1,0 +1,141 @@
+@font-face
+{
+	font-family: Montserrat;
+	src: url("font/Montserrat-ExtraLight.pfb.ttf")
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Montserrat;
+}
+body {
+  margin: 0;
+}
+
+#header{
+	width: 1600px;
+	height: 990px;
+
+	margin: 0px auto;
+
+	background-image: url(img/Background1.png);
+	color: white;
+
+	position: relative;
+}
+#header .title{
+	font-size: 62px;
+
+	position: absolute;
+	top: 208px;
+	left: 639px;
+}
+#header .content{
+	font-size: 20px;
+	opacity: 0.75;
+
+	text-align: center;
+
+	position: absolute;
+	top: 342px;
+	left: 419px;
+}
+#header .signUp{
+	width: 970px;
+	height: 250px;
+
+	border:1px solid rgba(255,255,255,0.25);
+	border-radius: 3px 3px 3px 3px;
+
+	position: absolute;
+	top:530px;
+	left: 315px;
+}
+#header .title1{
+	font-size: 16px;
+
+	margin-top: 55px;
+	text-align: center;
+}
+#header .title2{
+	font-size: 12px;
+	opacity: 0.5;
+
+	margin-top: 10px;
+	text-align: center;
+}
+#header .email{
+	width: 290px;
+	height: 50px;
+
+	padding: 12px;
+
+	border:1px solid rgba(255,255,255,0.5);
+	border-radius: 3px 3px 3px 3px;
+	background-color: transparent;
+	outline: none;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Montserrat;
+	color: white;
+
+	transition: all 0.5s;
+
+	position: absolute;
+	top: 145px;
+	left: 100px;
+}
+#header .email:focus{
+	border:1px solid rgba(255,255,255);
+}
+#header .password{
+	width: 290px;
+	height: 50px;
+
+	padding: 12px;
+
+	border:1px solid rgba(255,255,255,0.5);
+	border-radius: 3px 3px 3px 3px;
+	background-color: transparent;
+	outline: none;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Montserrat;
+	color: white;
+
+	transition: all 0.5s;
+
+	position: absolute;
+	top: 145px;
+	left: 420px;
+}
+#header .password:focus{
+	border:1px solid rgba(255,255,255);
+}
+#header .signup{
+	width: 125px;
+	height: 50px;
+
+	padding: 12px;
+
+	border:1px solid rgba(255,255,255);
+	border-radius: 3px 3px 3px 3px;
+	background: white;
+	outline: none;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Montserrat;
+	color: black;
+
+	transition: all 0.5s;
+
+	position: absolute;
+	top: 145px;
+	left: 740px;
+}
+#header .signup:hover{
+	cursor: pointer; 
+	background-color: rgba(255,255,255,0.7);
+	border:1px solid rgba(255,255,255,0.7);
+}

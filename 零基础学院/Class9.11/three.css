@@ -1,0 +1,72 @@
+#supportive{
+	width: 1600px;
+	height: 800px;
+
+	margin: 0px auto;
+
+	background-image: url("img/Background2.png");
+	color: white;
+
+	position: relative;
+}
+#supportive .content1{
+	font-size: 42px;
+	line-height: 52px;
+
+	position: absolute;
+	top: 180px;
+	left: 315px;
+}
+#supportive .content2{
+	font-size: 18px;
+	line-height: 28px;
+	opacity: 0.75;
+
+	position: absolute;
+	top: 360px;
+	left: 315px;
+}
+#supportive .button1{
+	width: 240px;
+	height: 60px;
+
+	border:1px solid rgb(255,255,255);
+	border-radius: 3px 3px 3px 3px;
+	background: rgb(255,255,255);
+
+	font-size: 12px;
+	text-align: center;
+	color: black;
+	transition: all 0.5s;
+
+	position: absolute;
+	top: 550px;
+	left: 315px;
+}
+#supportive .button1:hover{
+	cursor: pointer; 
+	border:1px solid rgb(255,255,255,0.7);
+	background: rgb(255,255,255,0.7);
+}
+#supportive .button2{
+	width: 240px;
+	height: 60px;
+
+	border:1px solid rgb(255,255,255,0.3);
+	border-radius: 3px 3px 3px 3px;
+	background: rgba(255,255,255,0);
+
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	transition: all 0.5s;
+
+	position: absolute;
+	top: 550px;
+	left: 585px;
+}
+#supportive .button2:hover{
+	cursor: pointer; 
+	border:1px solid rgb(255,255,255,0.3);
+	background: rgb(255,255,255,0.3);
+}
