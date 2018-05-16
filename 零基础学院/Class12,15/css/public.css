@@ -1,0 +1,58 @@
+@font-face
+{
+	font-family: ProximaNova;
+	src: url("../font/ProximaNovaSemibold.woff2.ttf");
+}
+* {
+  	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+  	font-family: ProximaNova;
+}
+body {
+	width: 100%;
+	height: 100%;
+
+  	margin: 0;
+}
+.blueNumber{
+	min-width: 24px;
+	height: 24px;
+
+	padding-left: 9px;
+	padding-right: 9px;
+
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	line-height: 24px;
+
+	border-radius: 12px 12px 12px 12px;
+	background:linear-gradient(to bottom, #2da1f8, #1a91ec);
+
+	float: right;
+}
+.warning{
+	width: 24px;
+	height: 24px;
+
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	line-height: 24px;
+
+	border-radius: 12px 12px 12px 12px;
+	background:linear-gradient(to bottom, #e95238, #c9280d);
+
+	float: right;
+}
+.highlight{
+	width: 20px;
+	height: 20px;
+
+	position: absolute;
+	top: 3px;
+	left: -40px;
+}

@@ -1,0 +1,68 @@
+#appItems{
+	width: 100px;
+	height: 100%;
+
+	background-color: #1d2531;
+
+	float: left;
+
+	position: relative;
+
+	z-index: 1;
+}
+#appItems img{
+	margin: 20px 20px 0px 20px;
+
+	transition: all 0.5s;
+}
+#appItems img:hover{
+	cursor: pointer; 
+	opacity: 0.8;
+}
+#appItems img:nth-of-type(4){
+	margin: 20px 20px 0px 20px;
+
+	transition: all 0.5s;
+
+	opacity:0.2;
+}
+#appItems img:nth-of-type(4):hover{
+	cursor: pointer; 
+	opacity: 0.5;
+}
+#appItems .grid{
+	width: 16px;
+	height: 16px;
+
+	
+	background-image: url("../img/appItems/Grid.png");
+	
+	opacity: 0.5;
+	transition: all 0.5s;
+
+	position: absolute;
+	bottom: 20px;
+	left: 26px;
+}
+#appItems .grid:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+#appItems .settings{
+	width: 16px;
+	height: 16px;
+
+	
+	background-image: url("../img/appItems/Settings.png");
+	
+	opacity: 0.5;
+	transition: all 0.5s;
+
+	position: absolute;
+	bottom: 20px;
+	right: 26px;
+}
+#appItems .settings:hover{
+	cursor: pointer;
+	opacity: 1;
+}
