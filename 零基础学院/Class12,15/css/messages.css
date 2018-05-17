@@ -1,5 +1,6 @@
 #messages{
 	width: calc(100% - 350px);
+	min-width: 400px;
 	height: 100%;
 
 	float: left;
@@ -12,6 +13,8 @@
 	height: 80px;
 
 	border-bottom: 1px solid #e6e9ec;
+
+	overflow: hidden;
 }
 #messages .header .title{
 	margin-left:30px;
@@ -55,4 +58,453 @@
 	float: right;
 
 	display: block;
+}
+#messages .statusBar{
+	width: 100%;
+	height: 70px;
+
+	border-bottom: 1px solid #e6e9ec;
+}
+#messages .searchBar{
+	width: 400px;
+	height: 100%;
+
+	border-right: 1px solid #e6e9ec;
+
+	color: white;
+
+	float: left;
+	position: relative;
+}
+#messages .searchBar .search{
+	width: 340px;
+	height: 36px;
+
+	margin-top: 17px;
+	margin-left: 30px;
+	padding-left: 15px;
+	padding-right: 30px;
+
+	border:1px solid #e5e8ee;
+	border-radius: 3px 3px 3px 3px;
+
+	outline: none;
+	transition: all 0.5s;
+
+	font-family: ProximaNova;
+}
+#messages .searchBar .search::-webkit-input-placeholder{
+	color: #b2bac8;
+}
+#messages .searchBar .search:focus{
+	border:1px solid #2399f1;
+}
+#messages .searchIcon{
+	position: absolute;
+	top: 27px;
+	left: 340px;
+}
+#messages .operationBar{
+	width: calc(100% - 400px);
+	height: 100%;
+
+	float: right;
+
+	position: relative;
+	overflow: hidden;
+}
+#messages .operationBar img:hover{
+	cursor: pointer;
+}
+#messages .operationBar input{
+	outline: none;
+}
+#messages .operationBar input:hover{
+	cursor: pointer;
+}
+#messages .operationBar input:active{
+	background: linear-gradient(to bottom, #f2f4f7, #ffffff);
+}
+#messages .operationBar .name{
+	font-size: 18px;
+	font-weight: bold;
+
+	margin-left: 28px;
+	margin-top: 23px;
+
+	float: left;
+}
+#messages .operationBar .status{
+	margin-left: 10px;
+	margin-top: 31px;
+
+	float: left;
+}
+#messages .operationBar .arrowRight{
+	width: 36px;
+	height: 32px;
+
+	margin-top: 16px;
+	margin-right: 20px;
+
+	border:1px solid #ced0da;
+	border-radius: 0 5px 5px 0;
+	background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+
+	float: right;
+}
+#messages .operationBar .rightIcon{
+	position: absolute;
+	top: 28px;
+	right: 34px;
+}
+#messages .operationBar .arrowLeft{
+	width: 36px;
+	height: 32px;
+
+	margin-top: 16px;
+
+	border-top:1px solid #ced0da;
+	border-left:1px solid #ced0da;
+	border-bottom:1px solid #ced0da;
+	border-right: 0px;
+	border-radius: 5px 0 0 5px;
+	background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+
+	float: right;
+}
+#messages .operationBar .leftIcon{
+	position: absolute;
+	top: 28px;
+	right: 72px;
+}
+#messages .operationBar .pageNumber{
+	width: 78px;
+	height: 32px;
+
+	margin-top: 16px;
+	margin-left: 23px;
+	border-left: 1px solid #f0f1f4;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: center;
+	color: #56688a;
+
+	float: right;
+}
+#messages .operationBar .trash{
+	width: 36px;
+	height: 32px;
+
+	margin-top: 16px;
+
+	border:1px solid #ced0da;
+	border-radius: 0 5px 5px 0;
+	background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+
+	float: right;
+}
+#messages .operationBar .trashIcon{
+	position: absolute;
+	top: 25px;
+	right: 204px;
+}
+#messages .operationBar .upload{
+	width: 35px;
+	height: 32px;
+
+	margin-top: 16px;
+
+	border-top:1px solid #ced0da;
+	border-bottom:1px solid #ced0da;
+	border-right: 0px;
+	border-left: 0px;
+	background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+
+	float: right;
+}
+#messages .operationBar .uploadIcon{
+	position: absolute;
+	top: 25px;
+	right: 238px;
+}
+#messages .operationBar .user{
+	width: 35px;
+	height: 32px;
+
+	margin-top: 16px;
+
+	border:1px solid #ced0da;
+	border-radius: 5px 0 0 5px;
+	background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+
+	float: right;
+}
+#messages .operationBar .userIcon{
+	position: absolute;
+	top: 25px;
+	right: 270px;
+}
+#messages .messageList{
+	width: 100%;
+	height: calc(100% - 150px);
+}
+#messages .linkmanList{
+	width: 400px;
+	height: 100%;
+
+	border-right: 1px solid #e6e9ec;
+
+	float: left;
+	overflow: scroll;
+}
+#messages .linkmanList .linkman{
+	width: 100%;
+
+	padding:18px 20px 20px 30px;
+	border-bottom: 1px solid #e6e9ec;
+
+	position: relative;
+}
+#messages .linkmanList .linkman:hover{
+	cursor: pointer;
+}
+#messages .linkmanList .linkman .blueLine{
+	width: 3px;
+	height: 100%;
+
+	background-color: #2399f1;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#messages .linkmanList .linkmanInfo{
+	width: 100%;
+	height: 46px;
+}
+#messages .linkmanList .linkman .information{
+	height: 46px;
+	margin-left: 20px;
+
+	float: left;
+}
+#messages .linkmanList .linkman .linkmanInfo .information .name{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
+}
+#messages .linkmanList .linkman .linkmanInfo .information .app{
+	font-size: 14px;
+	color: #c9c9c9;
+	line-height: 20px;
+}
+#messages .linkmanList .linkman .linkmanInfo .time{
+	font-size: 14px;
+	color: #7f8fa4;
+	float: right;
+}
+#messages .linkmanList .linkman .message{
+	margin-top: 10px;
+
+	font-size: 14px;
+	color: #585d68;
+
+	overflow: auto;
+}
+#messages .linkmanList .linkman .message .content{
+	font-family: ProximaNova2;
+}
+#messages .messageDetail{
+	width: calc(100% - 400px);
+	height: calc(100% - 90px);
+
+	float: right;
+
+	overflow: scroll;
+	position: relative;
+}
+#messages .messageDetail .detail{
+	margin: 25px 30px 0px 30px;
+}
+#messages .messageDetail .img{
+	margin-right: 18px;
+
+	float: left;
+	
+}
+#messages .messageDetail .information{
+	overflow: hidden;
+}
+#messages .messageDetail .caption .name{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-right: 8px;
+	float: left;
+}
+#messages .messageDetail .caption .time{
+	font-size: 14px;
+	color: #7f8fa4;
+	line-height: 24px;
+}
+#messages .messageDetail .message{
+	font-family: ProximaNova2;
+	font-size: 14px;
+}
+#messages .messageDetail .photo{
+	margin-top: 15px;
+	position: relative;
+}
+#messages .messageDetail .photo .photo1{
+	width: 156px;
+	height: 100px;
+
+	margin-right: 10px;
+
+	background-image: url("../img/messages/Photo1.png");
+
+	border-radius: 5px 5px 5px 5px;
+
+	float: left;
+}
+#messages .messageDetail .photo .open1{
+	width: 156px;
+	height: 100px;
+
+	margin-right: 10px;
+
+	background-color: rgba(0,0,0,0.5);
+
+	border-radius: 5px 5px 5px 5px;
+
+	float: left;
+
+	opacity: 0;
+	transition: all 0.5s;
+
+	position: absolute;
+	left: 0px;
+}
+#messages .messageDetail .photo .open1:hover{
+	opacity: 1;
+}
+#messages .messageDetail .photo .photo2{
+	width: 156px;
+	height: 100px;
+
+	margin-right: 10px;
+
+	background-image: url("../img/messages/Photo2.png");
+
+	border-radius: 5px 5px 5px 5px;
+
+	float: left;
+}
+#messages .messageDetail .photo .open2{
+	width: 156px;
+	height: 100px;
+
+	margin-right: 10px;
+
+	background-color: rgba(0,0,0,0.5);
+
+	border-radius: 5px 5px 5px 5px;
+
+	float: left;
+
+	opacity: 0;
+	transition: all 0.5s;
+
+	position: absolute;
+	left: 166px;
+}
+#messages .messageDetail .photo .open2:hover{
+	opacity: 1;
+}
+#messages .messageDetail .photo .circle{
+	width: 50px;
+	height: 50px;
+
+	margin: 25px 53px;
+
+	text-align: center;
+
+	border-radius: 50% 50% 50% 50%;
+	background-color: rgba(255,255,255,0.3);
+}
+#messages .messageDetail .photo .circle img{
+	margin-top: 17px;
+	display: inline-block;
+}
+#messages .line{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	display: flex;
+}
+#messages .line .time{
+	margin: 0px 20px;
+
+	font-family: ProximaNova2;
+	font-size: 14px;
+	color: #7f8fa4;
+	text-align: center;
+
+	display: inline-block;
+
+	position: relative;
+	top: 6px;
+}
+#messages .line .greyLine{
+	border-bottom: 1px solid #d9dde3;
+	flex: 1;
+}
+#messages .messageList .input{
+	width: calc(100% - 450px);
+	height: 53px;
+
+	margin:20px 25px;
+	background-color: white;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#messages .messageList .input .addMessage{
+	width: 55px;
+	height: 53px;
+
+	border:1px solid #ced0da;
+	border-radius: 5px 0 0 5px;
+	background: linear-gradient(to bottom, #ffffff, #f2f4f7);
+
+	outline: none;
+
+	float: left;
+}
+#messages .messageList .input .addIcon{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#messages .messageList .input .addMessage:hover{
+	cursor: pointer;
+}
+#messages .messageList .input .addMessage:active{
+	background: linear-gradient(to bottom, #f2f4f7, #ffffff);
+}
+#messages .messageList .input .message{
+	width: calc(100% - 55px);
+	height: 53px;
+
+	padding: 0 20px;
+
+	border:1px solid #ced0da;
+	border-left: 0px;
+
+	font-family: ProximaNova2;
+	color: #585d68;
+
+	outline: none;
 }

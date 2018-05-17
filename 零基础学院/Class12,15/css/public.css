@@ -3,8 +3,16 @@
 	font-family: ProximaNova;
 	src: url("../font/ProximaNovaSemibold.woff2.ttf");
 }
+@font-face
+{
+	font-family: ProximaNova2;
+	src: url("../font/Proxima Nova.woff.ttf");
+}
 * {
   	box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+  display:none;
 }
 html {
 	width: 100%;
@@ -21,8 +29,8 @@ body {
 	min-width: 24px;
 	height: 24px;
 
-	padding-left: 9px;
-	padding-right: 9px;
+	padding-left: 7px;
+	padding-right: 7px;
 
 	font-size: 14px;
 	color: white;
@@ -33,6 +41,8 @@ body {
 	background:linear-gradient(to bottom, #2da1f8, #1a91ec);
 
 	float: right;
+
+	overflow: hidden;
 }
 .warning{
 	width: 24px;
