@@ -1,0 +1,157 @@
+* {
+  	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+
+  	margin: 0;
+
+  	overflow: hidden;
+}
+.bkList{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.bkList .bk{
+	width: 100%;
+	height: 100%;
+
+	background-position:center; 
+	background-repeat:no-repeat;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	z-index: -1;
+}
+.bk.pre {
+    z-index: 0;
+}
+.bk:nth-of-type(1){
+	background-image: url("img/6.jpg");
+}
+.bk:nth-of-type(1).active{
+    animation:change_1 0.5s ease-out;
+	z-index: 1;
+}
+@keyframes change_1{
+	from{
+		left: -500px;
+	}
+	to{
+		left: 0px;
+	}
+}
+.bk:nth-of-type(2){
+	background-image: url("img/7.jpg");
+}
+.bk:nth-of-type(2).active{
+    animation:change_2 0.5s ease-out;
+	z-index: 1;
+}
+@keyframes change_2{
+	from{
+		top: 350px;
+	}
+	to{
+		top: 0px;
+	}
+}
+.bk:nth-of-type(3){
+	background-image: url("img/8.jpg");
+}
+.bk:nth-of-type(3).active{
+    animation:change_3 1s ease-in;
+	z-index: 1;
+}
+@keyframes change_3{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+.bk:nth-of-type(4){
+	background-image: url("img/9.jpg");
+}
+.bk:nth-of-type(4).active{
+    animation:change_4 1s ease-out;
+	z-index: 1;
+}
+@keyframes change_4{
+	from{
+		transform: scale(2);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+.bk:nth-of-type(5){
+	background-image: url("img/10.jpg");
+}
+.bk:nth-of-type(5).active{
+    animation:change_5 1s ease-in-out;
+	z-index: 1;
+}
+@keyframes change_5{
+	from{
+		transform: scale(0.1) rotate(-360deg);
+	}
+	to{
+		transform: scale(1) rotate(0deg);
+	}
+}
+.buttonList{
+	width: 1060px;
+	margin:0 auto;
+	overflow: auto;
+
+	position: fixed;
+	bottom: 100px;
+	left: calc((100% - 1065px) / 2);
+
+	z-index: 1;
+}
+.buttonList .button{
+	width: 192px;
+	height: 108px;
+
+	margin: 0 10px;
+
+	background-size:contain;
+	transition: all 0.5s;
+
+	float: left;
+
+	opacity: 0.5;
+}
+.buttonList .button:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+.button:nth-of-type(1){
+	background-image: url("img/6.jpg");
+}
+.button:nth-of-type(2){
+	background-image: url("img/7.jpg");
+}
+.button:nth-of-type(3){
+	background-image: url("img/8.jpg");
+}
+.button:nth-of-type(4){
+	background-image: url("img/9.jpg");
+}
+.button:nth-of-type(5){
+	background-image: url("img/10.jpg");
+}

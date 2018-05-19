@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yingpengsha</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="bkList">
+		<div class="bk pre active"></div>
+		<div class="bk"></div>
+		<div class="bk"></div>
+		<div class="bk"></div>
+		<div class="bk"></div>
+	</div>
+	
+
+	<div class="buttonList">
+		<div class="button"></div>
+		<div class="button"></div>
+		<div class="button"></div>
+		<div class="button"></div>
+		<div class="button"></div>
+	</div>
+	
+
+	<script type="text/javascript">
+		var bk = document.querySelectorAll('.bk');
+        var button = document.querySelectorAll('.button');
+        var prepIndex = 1; // 上上一个显示的图片的下标, 用于遮挡其他图片
+        var preIndex = 1; // 上一个显示的图片的下标
+        var l = button.length; // 图片总数
+        for (var i = 0; i < l; i += 1) {
+            (function(i) {
+                button[i].onclick = function() {
+                    console.log(i)
+                    bk[prepIndex].classList.remove('pre');
+                    bk[preIndex].classList.remove('active');
+                    bk[preIndex].classList.add('pre');
+                    bk[i].classList.add('active');
+                    prepIndex = preIndex;
+                    preIndex = i;
+                }
+            })(i)
+        }
+	</script>
+</body>
+</html>
