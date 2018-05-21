@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>九九乘法表</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var table=document.getElementById("table");
+			for (var i=1;i<=9;i++) {
+				var row=[];
+				for (var j=1;j<=i;j++) {
+					var Tcell=document.createElement("td");
+					var string=j+" * "+i+" = "+i*j;
+					row.push(string);
+					
+				}
+				var Trow=getDataRow(row);console.log(Trow);
+				table.appendChild(Trow);
+			}
+		}
+		
+		function getDataRow(row){  
+	    	var Trow = document.createElement('tr');
+	    	for (var i=0;i<=row.length-1;i++) {
+	    		var cell=document.createElement('td');
+	    		cell.innerHTML=row[i];
+	    		
+	    		Trow.appendChild(cell);
+	    	}
+	       	
+	    	return Trow;     
+	    }
+	</script>
+</head>
+<body>
+	<h1>编码</h1>
+	<p>小练习，练习使用循环实现一个九九乘法表</p>
+	<ul>
+		<li>第一步，最低要求：在Console中按行输出 n * m = t</li>
+		<li>然后，尝试在网页中，使用table来实现一个九九乘法表</li>
+	</ul>
+	<h1>结果一：请打开控制台查看</h1>
+	<h1>结果二：</h1>
+	<table id="table">
+	</table>
+</body>
+</html>
