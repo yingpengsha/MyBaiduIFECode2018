@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <div id="wrapper">
+        <div id="news-top" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                    <li><span>CSS</span><a href="">Some Link3</a></li>
+                    <li><span>JS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>
+        <div id="news-normal" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>HTML</span><a href="">Some Link2</a></li>
+                    <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                    <li><span>CSS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+            <p>
+                <button id="btn1" onclick="getAllListItem()">getAllListItem()</button>
+            </p>
+            <p>
+                <input type="text" name="sectionId1" id="sectionId1" placeholder="sectionId">
+                <button id="btn2" >findAllHtmlSpanInOneSection()</button>
+            </p>
+            <p>
+                <input type="text" name="sectionId2" id="sectionId2" placeholder="sectionId">
+                <input type="text" name="spanCont" id="spanCont" placeholder="spanCont">
+                <button id="btn3" >findListItem()</button>
+            </p>
+            <p>
+                <input type="text" name="sectionId4" id="sectionId4" placeholder="sectionId">
+                <button id="btn4" >getActiveLinkContent()</button>
+            </p>
+        </div>      
+    </div>
+    <script>
+
+    function getAllListItem() {
+        // 返回页面中所有li标签
+        var result=document.querySelectorAll('li');
+        console.log(result);
+    }
+
+
+    var bt2=document.getElementById('btn2');
+    btn2.onclick=function(){
+        findAllHtmlSpanInOneSection(document.getElementById('sectionId1').value);
+    }
+    function findAllHtmlSpanInOneSection(sectionId) {
+        // 返回某个section下所有span中内容为HTML的span标签
+        var span=document.querySelectorAll('#'+sectionId+' span');
+        var result=[];
+        for (var i = 0; i <= span.length - 1; i++) {
+            if(span[i].innerHTML=='HTML'){
+                result.push(span[i])
+            }
+        }
+        console.log(result);
+    }
+
+
+    var bt3=document.getElementById('btn3');
+    btn3.onclick=function(){
+        findListItem(document.getElementById('sectionId2').value,document.getElementById('spanCont').value);
+    }
+    function findListItem(sectionId, spanCont) {
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+        var li=document.querySelectorAll('#'+sectionId+' li');
+        var result=[];
+        for (var i = 0; i <= li.length - 1; i++) {
+            var span=li[i].querySelectorAll('span');
+            for (var j = 0; j <= span.length - 1; j++) {
+                if(span[j].innerHTML==spanCont){
+                    result.push(li[i]);
+                    break;
+                }
+            }
+        }
+        console.log(result);
+    }
+
+    var bt4=document.getElementById('btn4');
+    btn4.onclick=function(){
+        getActiveLinkContent(document.getElementById('sectionId4').value);
+    }
+    function getActiveLinkContent(sectionId) {
+        // 返回某个section下，class为active的链接中包含的文字内容
+        var a=document.querySelectorAll('#'+sectionId+' a');
+        var result=[];
+        for (var i = 0; i <= a.length - 1; i++) {
+            if(a[i].className=='active'){
+                result.push(a[i].textContent);
+            }
+        }
+        console.log(result);
+    }
+    </script>
+</body>
+</html>
