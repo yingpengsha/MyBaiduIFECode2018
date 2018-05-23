@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yingpengsha</title>
+</head>
+<body>
+	<input id="name" type="text">    
+	<button id="submit-btn">Submit</button>
+	<script type="text/javascript">
+		var submit=document.getElementById('submit-btn');
+		var input=document.getElementById('name');
+		submit.onclick=function(){
+			console.log(input.value);
+		}
+		input.onkeydown=function(){//当对象名是name是一切失效
+			if(event.keyCode==13){
+				console.log(input.value);
+			}
+			if(event.keyCode==27){
+				input.value='';
+			}
+		}
+	</script>
+</body>
+</html>
