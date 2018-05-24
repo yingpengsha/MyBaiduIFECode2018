@@ -12,7 +12,7 @@
   	box-sizing: border-box;
 }
 *::-webkit-scrollbar{
-	width: 0;
+	display: none;
 }
 html {
 	width: 100%;
