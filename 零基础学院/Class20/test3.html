@@ -32,15 +32,14 @@
     <p class="color-picker"></p>
 
     <script>
-        var list = document.querySelectorAll("li");
-        for (var i = i = 0, len = list.length; i < len; i++) {
-            list[i].onclick = function(e) {
-                var t = e.target;
-                var c = t.style.backgroundColor;
-                var p = document.getElementsByClassName("color-picker")[0]
-                p.innerHTML = c;
-                p.style.color = c;
-
+        var palette=document.querySelector('.palette');
+        var picker=document.querySelector('.color-picker');
+        palette.onclick=function(event){
+            var event=event || window.event;
+            var target=event.target || event.srcElement;
+            if(target.nodeName.toLowerCase()=='li'){
+                picker.innerHTML=target.style.backgroundColor;
+                picker.style.color=target.style.backgroundColor;
             }
         }
     </script>
