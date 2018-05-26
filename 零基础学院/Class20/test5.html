@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test5</title>
+	<style type="text/css">
+		#smile{
+			width: 479px;
+			height: 479px;
+			margin: 0 auto;
+			background-image: url(img/smile.jpg);
+			background-position: 0px -1px;
+		}
+	</style>
+</head>
+<body>
+	<div id="smile"></div>
+	<script type="text/javascript">
+		var	count=0;//计数
+		var flag=true;//true为增加，false为减少
+		function smile(){
+			if (count==0) {
+				flag=true;
+			}
+			else if(count==16){
+				flag=false;
+			}
+
+			if (flag) {
+				count++;
+			}
+			else {
+				count--;
+			}
+			
+			var smileDiv=document.getElementById('smile');
+			smileDiv.style.backgroundPosition='0px '+(-count*480-1)+'px';
+		}
+		setInterval(smile,100);
+	</script>
+</body>
+</html>
