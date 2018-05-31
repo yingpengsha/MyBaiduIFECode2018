@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>test1</title>
+    <style type="text/css">
+        button:nth-of-type(1){
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -27,10 +32,10 @@
         var result=document.getElementById('result');
         var selectN=undefined;
         function getSelectNumber(){
-            if(radioA.checked==true){
+            if(radioA.checked){
                 selectN=numA.value;
             }
-            else if(radioB.checked==true){
+            else if(radioB.checked){
                 selectN=numB.value;
             }
         }
