@@ -40,12 +40,15 @@
         var numB=document.getElementById('num-b');
         var result=document.getElementById('result');
         var selectS=undefined;
+        var unselectS=undefined;
         function getSelectString(){
             if (radioA.checked) {
                 selectS=strA.value;
+                unselectS=strB.value;
             }
             else if (radioB.checked) {
                 selectS=strB.value;
+                unselectS=strA.value;
             }
         }
         document.querySelector('button:nth-of-type(1)').onclick=function(){
@@ -68,6 +71,34 @@
         document.querySelector('button:nth-of-type(6)').onclick=function(){
             getSelectString();
             result.innerHTML=selectS.slice(Number(numA.value),Number(numB.value));
+        }
+        document.querySelector('button:nth-of-type(7)').onclick=function(){
+            if (radioA.checked) {
+                result.innerHTML=strA.rows;
+            }
+            else if(radioA.checked) {
+                result.innerHTML=strB.rows;
+            }
+        }
+        document.querySelector('button:nth-of-type(8)').onclick=function(){
+            getSelectString();
+            result.innerHTML=selectS.substr(Number(numA.value),Number(numB.value));
+        }
+        document.querySelector('button:nth-of-type(9)').onclick=function(){
+            getSelectString();
+            result.innerHTML=selectS.toLocaleUpperCase();
+        }
+        document.querySelector('button:nth-of-type(10)').onclick=function(){
+            getSelectString();
+            result.innerHTML=selectS.toLocaleLowerCase();
+        }
+        document.querySelector('button:nth-of-type(11)').onclick=function(){
+            getSelectString();
+            result.innerHTML=selectS.replace(/ /g,'');
+        }
+        document.querySelector('button:nth-of-type(12)').onclick=function(){
+            getSelectString();
+            result.innerHTML=selectS.replace(/a/g,unselectS);
         }
     </script>
 </body>
