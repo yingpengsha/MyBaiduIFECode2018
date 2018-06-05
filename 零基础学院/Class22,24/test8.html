@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test7</title>
+</head>
+<body>
+	<input id="stack-input" type="text">
+	<p id="stack-cont">栈内容：apple&lt;-pear</p>    
+	<button id="push-btn">进栈</button>
+	<button id="pop-btn">退栈</button>
+	<button id="font-btn">打印栈顶元素内容</button>
+	<button id="empty-btn">判断栈是否为空</button>
+
+	<script>
+
+		var stack = ["apple", "pear"];
+		var input=document.getElementById('stack-input');
+		var result=document.getElementById('stack-cont');
+		var push=document.getElementById('push-btn');
+		var pop=document.getElementById('pop-btn');
+		var font=document.getElementById('font-btn');
+		var empty=document.getElementById('empty-btn');
+		function print(){
+			result.innerHTML='栈内容：'+stack.join('<-')
+		}
+		push.onclick=function(){
+			stack.push(input.value);
+			print();
+		}
+		pop.onclick=function(){
+			stack.pop();
+			print();
+		}
+		font.onclick=function(){
+			result.innerHTML='栈顶元素：'+stack[0];
+		}
+		empty.onclick=function(){
+			if (stack.length) {
+				result.innerHTML='不为空';
+			}
+			else{
+				result.innerHTML='为空';
+			}
+		}
+	</script>
+</body>
+</html>

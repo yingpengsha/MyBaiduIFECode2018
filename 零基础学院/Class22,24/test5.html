@@ -21,24 +21,14 @@
 		var font=document.getElementById('font-btn');
 		var empty=document.getElementById('empty-btn');
 		function print(){
-			result.innerHTML='队列内容：';
-			for (var i=0;i<queue.length;i++) {
-				result.innerHTML+=queue[i];
-				if (i!=queue.length-1) {
-					result.innerHTML+='->'
-				}
-			}
+			result.innerHTML='队列内容：'+queue.join('->');
 		}
 		inA.onclick=function(){
 			queue.unshift(input.value);
 			print();
 		}
 		outA.onclick=function(){
-			for(var i=0;i<queue.length;i++){
-				if (queue[i]==input.value){
-					queue.splice(i,1);
-				}
-			}
+			queue.splice(queue.length-1,1);
 			print();
 		}
 		font.onclick=function(){
