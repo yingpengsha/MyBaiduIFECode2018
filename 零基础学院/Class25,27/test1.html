@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Go() {
+    		console.log("Go");
+		}
+
+		function GoSteps(n) {
+			console.log(String(n));
+			if (String(n)=='undefined' || n==true) {
+				n=1;
+			}
+		    if(String(n).match(/^(\-|\+)?\d+(\.\d+)?$/)){
+		    	for(var i=1;i<=Number(n);i++){
+		    		Go();
+		    	}
+		    }
+		    console.log('----------------------------');
+		}
+
+		GoSteps(10); // Go 10次
+		GoSteps(1); // Go 1次
+		GoSteps(); // Go 1次，认为缺少参数时，默认参数为1
+		GoSteps(0);  // 0次
+		GoSteps(-1);  // 0次
+		GoSteps(1.4);  // Go 1次
+		GoSteps(1.6);  // Go 1次
+		GoSteps(-1);  // 0次
+		GoSteps(true);  // Go 1次
+		GoSteps(false);  // 0次
+		GoSteps("Test");  // 0次
+		GoSteps(NaN);  // 0次
+		GoSteps(null);  // 0次
+	</script>
+</body>
+</html>

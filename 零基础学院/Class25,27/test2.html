@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test3</title>
+</head>
+<body>
+	<p id="dateCN"></p>
+	<p id="dateEN"></p>
+	<script type="text/javascript">
+		var p1=document.getElementById('dateCN');
+		var p2=document.getElementById('dateEN');
+		function printDate(){
+			var date=new Date();
+			var year=date.getFullYear();
+			var month=format(date.getMonth());
+			var day=format(date.getDate());
+			var hour=date.getHours();
+			var minute=format(date.getMinutes());
+			var second=format(date.getSeconds());
+			var AmPm=date.getHours()<12?'AM':'PM';
+			packageCN(year,month,day,formatWeekCN(date),format(hour),minute,second);
+			packageEN(year,month,day,formatWeekEN(date),formatHour(hour),minute,second,AmPm);
+		}
+		function formatWeekCN(date){
+			var weekCN=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+			return weekCN[date.getDay()];
+		}
+		function formatWeekEN(date){
+			var weekEN=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+			return weekEN[date.getDay()];
+		}
+		function formatHour(hour){
+			if (hour>=12) {
+				return format(hour-12);
+			}
+		}
+		function format(number){
+			if (Number(number)<10) {
+				return '0'+ number;
+			}
+			return number;
+		}
+		function packageCN(year,month,day,week,hour,minute,second){
+			p1.innerHTML=year+'年'+month+'月'+day+'日 '+week+' '+hour+':'+minute+':'+second;
+		}
+		function packageEN(year,month,day,week,hour,minute,second,AmPm){
+			p2.innerHTML=year+'-'+month+'-'+day+' '+week+' '+hour+':'+minute+':'+second+' '+AmPm;
+		}
+		printDate();
+		var time=setInterval('printDate()',1000);
+	</script>
+</body>
+</html>
