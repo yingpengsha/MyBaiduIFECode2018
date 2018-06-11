@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test1</title>
+	<style type="text/css">
+		* {
+		  	box-sizing: border-box;
+		}
+		#email-input{
+			width: 300px;
+			height: 40px;
+
+			font-size: 20px;
+			padding: 5px;
+			outline: none;
+		}
+		#email-sug-wrapper{
+			width: 300px;
+			visibility: hidden;
+			margin:0px;
+			padding:0px;
+			border:1px solid grey;
+			border-top: 0px;
+		}
+		#email-sug-wrapper li{
+			height: 30px;
+			padding:5px;
+			color: grey;
+			line-height: 20px;
+			list-style-type:none;
+			overflow: hidden;
+		}
+		#email-sug-wrapper li:hover{
+			background:#c0dded; 
+			color: white;
+		}
+		.select{
+			background:#ffc5cf;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	    <input id="email-input" type="text">
+	    <ul id="email-sug-wrapper" class="email-sug"></ul>
+	</div>
+	<script type="text/javascript">
+		var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
+		var input=document.getElementById('email-input');
+		var list=document.getElementById('email-sug-wrapper');
+		var index=0;
+		input.focus();
+		input.onkeydown=function(event){
+			if (event.keyCode==38) {
+				event.preventDefault();
+			}
+		}
+		input.onkeyup=function(event){
+			switch(event.keyCode)
+			{
+				case 38:
+					event.preventDefault();
+					index--;
+					changeColor()
+					break;
+				case 40:
+					index++;
+					changeColor()
+					break;
+				case 13:
+					input.value=htmlDecode(list.getElementsByTagName('li')[index].innerHTML);
+					hiddenList();
+					break;
+				case 27:
+					input.select();
+					break;
+				default:
+					index=0;
+					var userInput=getUserInput();
+					var emailList=getList(userInput);
+					insertUl(emailList);
+					controlList(userInput);
+					changeColor();
+			}
+		}
+		function getUserInput(){
+			return input.value.replace(/^\s+|\s+$/gm,'');
+		}
+		function getList(str){
+			var emailList=[],afterList=[];
+			var before=str,after='';
+			if (str.indexOf('@')!=-1) {
+				before=str.substring(0,str.indexOf('@'));
+				after=str.substring(str.indexOf('@')+1,str.length);
+				if (after!='') {
+					for(var i=0;i<=postfixList.length-1;i++){
+						if (postfixList[i].substr(0,after.length)==after) {
+							afterList.push(postfixList[i]);
+						}
+					}
+				}
+			}
+			if (afterList.length==0) {
+				afterList=postfixList;
+			}
+			for(var i=0;i<=afterList.length-1;i++){
+				emailList[i]=document.createElement('li');
+				emailList[i].innerHTML=htmlEncode(before+'@'+afterList[i]);
+			}
+			return emailList;
+		}
+		function insertUl(emailList){
+			list.innerHTML='';
+			for(var i=0;i<=emailList.length-1;i++){
+				list.appendChild(emailList[i]);
+			}
+		}
+		function controlList(userInput){
+			if (userInput=='') {
+				hiddenList();
+			}
+			else{
+				showList();
+			}
+		}
+		function showList(){
+			list.style.visibility='visible';
+		}
+		function hiddenList(){
+			list.style.visibility='hidden';
+		}
+
+		list.onclick=function(event){
+			var ev = ev || window.event;
+			var target = ev.target || ev.srcElement;
+			if(target.nodeName.toLowerCase() == 'li'){
+				hiddenList();
+				input.value=htmlDecode(target.innerHTML);
+	　　　　}
+		}
+
+		function htmlEncode(html) {
+	    	var temp = document.createElement('div');
+	        temp.textContent != undefined ? temp.textContent = html : temp.innerText = html;
+	        return temp.innerHTML;
+	    }
+
+		function htmlDecode(html) {
+			console.log(html);
+        	var temp = document.createElement('div');
+        	temp.innerHTML = html;
+        	return temp.innerText || temp.textContent;
+        }
+
+        function changeColor(){
+        	var childList=list.getElementsByTagName('li');
+        	if(index==-1){
+        		index=childList.length-1;
+        	}
+        	if(index==childList.length){
+        		index=0;
+        	}
+        	for(var i=0;i<=childList.length-1;i++)
+        	{
+        		if (i==index) {
+        			childList[i].classList.add('select');
+        		}
+        		else{
+        			childList[i].setAttribute('class','');
+        		}
+        	}
+        }
+	</script>
+</body>
+</html>
