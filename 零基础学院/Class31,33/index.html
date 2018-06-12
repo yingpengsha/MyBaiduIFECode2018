@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我是精明的小卖家</title>
+	<style type="text/css">
+		#table{
+			border:1px solid black;
+			text-align: align;
+		}
+		#table td{
+			border:1px solid black;
+			width: 80px;
+		}
+	</style>
+	<script type="text/javascript" src="js/ife31data.js"></script>
+</head>
+<body>
+	<div>
+		<span>商品类型：</span>
+		<input type="checkbox" id="productAll" value="全选" checked="true">全选
+		<div id="productBox" style="display: inline;">
+			<input type="checkbox" name="product" value="手机" checked="true">手机
+			<input type="checkbox" name="product" value="笔记本" checked="true">笔记本
+			<input type="checkbox" name="product" value="智能音箱" checked="true">智能音箱
+		</div>
+	</div>
+	<div>
+		<span>地区：</span>
+		<input type="checkbox" id="regionAll" value="全选" checked="true">全选
+		<div id="regionBox" style="display: inline;">
+			<input type="checkbox" name="region" value="华东" checked="true">华东
+			<input type="checkbox" name="region" value="华南" checked="true">华南
+			<input type="checkbox" name="region" value="华北" checked="true">华北
+		</div>
+	</div>
+	<div id="table-wrapper">
+		<table id="table">
+		</table>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
